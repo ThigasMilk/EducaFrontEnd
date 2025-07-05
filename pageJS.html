@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EducaFrontEnd</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Lincando ao arquivo com o css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Criação do cabeçalho com de navegação -->
+    <header>
+        <nav>
+            <div class="logo">Educa<span style="color: var(--accent);">FrontEnd</span></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="Home.html">Início</a></li>
+                <li><a href="pageHTML.html">HTML</a></li>
+                <li><a href="pageCSS.html">CSS</a></li>
+                <li><a href="pageJS.html">JavaScript</a></li>
+                <li><a href="pageContato.html">Contato</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Div da pagina home com os conteiners de redirecionamento para outras paginas -->
+    <div class="page-container">
+
+        <!-- JavaScript Page -->
+        <div id="javascript-page" class="page-content">
+            <div class="language-page">
+                <h2>JavaScript: Dando Vida à Web</h2>
+                <p>JavaScript é uma linguagem de programação que permite criar conteúdo dinâmico e interativo em páginas
+                    web.
+                    Ele permite manipular o DOM, lidar com eventos, fazer requisições assíncronas e muito mais.</p>
+
+                <div class="advantages">
+                    <h4>Por que JavaScript é essencial?</h4>
+                    <ul>
+                        <li>Última linguagem executada diretamente no navegador</li>
+                        <li>Permite interações complexas em tempo real</li>
+                        <li>Base para frameworks modernos como React e Vue</li>
+                        <li>Possível usar no back-end com Node.js</li>
+                    </ul>
+                </div>
+
+                <h3>Conceitos Básicos</h3>
+                <div class="code-example">
+                    <pre>
+                        <code>
+    // Variáveis
+    let mensagem = "Olá, Mundo!";
+    const PI = 3.14;
+
+    // Funções
+    function soma(a, b) {
+        return a + b;
+    }
+
+    // Estruturas de controle
+    if (idade >= 18) {
+        console.log("Maior de idade");
+    } else {
+        console.log("Menor de idade");
+    }
+
+    // Loops
+    for (let i = 0; i < 5; i++) {
+        console.log(i);
+    }
+                        </code>
+                    </pre>
+                </div>
+
+                <h3>Manipulação do DOM</h3>
+                <p>JavaScript pode alterar elementos HTML dinamicamente:</p>
+                <div class="code-example">
+                    <pre>
+                        <code>
+    // Selecionar elemento
+    const botao = document.getElementById('meuBotao');
+
+    // Manipular conteúdo
+    botao.textContent = 'Novo Texto';
+
+    // Adicionar evento
+    botao.addEventListener('click', function() {
+        alert('Botão clicado!');
+    });
+
+    // Criar novo elemento
+    const novoParagrafo = document.createElement('p');
+    novoParagrafo.textContent = 'Texto dinâmico';
+    document.body.appendChild(novoParagrafo);
+                        </code>
+                    </pre>
+                </div>
+
+                <h3>Exemplo Prático: Contador</h3>
+                <div class="code-example" id="contador-exemplo">
+                    <div id="contador-valor" class="contador-valor">0</div>
+                    <div>
+                        <button id="incrementar" class="btn btn-success btn-contador mx-1">+</button>
+                        <button id="decrementar" class="btn btn-danger btn-contador mx-1">-</button>
+                    </div>
+                </div>
+                <script>
+                    let contador = 0;
+                    const valor = document.getElementById('contador-valor');
+                    const btnIncrementar = document.getElementById('incrementar');
+                    const btnDecrementar = document.getElementById('decrementar');
+
+                    btnIncrementar.addEventListener('click', () => {
+                        contador++;
+                        valor.textContent = contador;
+                    });
+
+                    btnDecrementar.addEventListener('click', () => {
+                        contador--;
+                        valor.textContent = contador;
+                    });
+                </script>
+
+                <div><a class="btn" href="Home.html">Voltar para a página inicial</a></div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2023 FrontEnd Essentials - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

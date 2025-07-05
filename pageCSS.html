@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EducaFrontEnd</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Lincando ao arquivo com o css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Criação do cabeçalho com de navegação -->
+    <header>
+        <nav>
+            <div class="logo">Educa<span style="color: var(--accent);">FrontEnd</span></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="Home.html">Início</a></li>
+                <li><a href="pageHTML.html">HTML</a></li>
+                <li><a href="pageCSS.html">CSS</a></li>
+                <li><a href="pageJS.html">JavaScript</a></li>
+                <li><a href="pageContato.html">Contato</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Div da pagina home com os conteiners de redirecionamento para outras paginas -->
+    <div class="page-container">
+
+        <!-- CSS Page -->
+        <div id="css-page" class="page-content">
+            <div class="language-page">
+                <h2>CSS: Estilizando a Web</h2>
+                <p>CSS (Cascading Style Sheets) é a linguagem que controla a apresentação visual de documentos HTML. Com
+                    CSS, você pode definir cores, fontes, layouts e efeitos visuais que tornam seu site atraente e
+                    responsivo.</p>
+
+                <div class="advantages">
+                    <h4>Vantagens do CSS</h4>
+                    <ul>
+                        <li>Separação de conteúdo e apresentação</li>
+                        <li>Controle preciso sobre o layout</li>
+                        <li>Design responsivo para múltiplos dispositivos</li>
+                        <li>Animações e transições suaves</li>
+                    </ul>
+                </div>
+
+                <h3>Sintaxe Básica</h3>
+                <p>Um conjunto de regras CSS consiste em um seletor e um bloco de declarações:</p>
+                <div class="code-example">
+                    <pre>
+                        <code>
+    seletor {
+        propriedade: valor;
+        outra-propriedade: valor;
+    }
+                        </code>
+                    </pre>
+                </div>
+
+                <h3>Seletores Comuns</h3>
+                <table class="table">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Seletor</th>
+                            <th>Exemplo</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Tag</strong></td>
+                            <td><code>h1</code></td>
+                            <td>Seleciona todos os elementos <code>&lt;h1&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Classe</strong></td>
+                            <td><code>.menu</code></td>
+                            <td>Seleciona elementos com <code>class="menu"</code></td>
+                        </tr>
+                        <tr>
+                            <td><strong>ID</strong></td>
+                            <td><code>#header</code></td>
+                            <td>Seleciona o elemento com <code>id="header"</code></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Atributo</strong></td>
+                            <td><code>[href]</code></td>
+                            <td>Seleciona elementos com atributo <code>href</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Box Model</h3>
+                <p>O modelo de caixa é fundamental para entender layout em CSS:</p>
+                <div class="code-example">
+
+                    <pre><code>
+    .box {
+        width: 300px;
+        padding: 20px;
+        border: 5px solid #333;
+        margin: 10px;
+    }
+                    </code></pre>
+
+                </div>
+                <p>O tamanho total do elemento será: 300px (width) + 40px (padding) + 10px (border) + 20px (margin) =
+                    370px
+                </p>
+
+                <h3>Flexbox e Grid</h3>
+                <p>Sistemas modernos para criar layouts complexos:</p>
+                <div class="code-example">
+                    <pre><code>
+    /* Flexbox */
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* CSS Grid */
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+                    </code></pre>
+                </div>
+
+                <div><a class="btn" href="Home.html">Voltar para a página inicial</a></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2023 FrontEnd Essentials - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

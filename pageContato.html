@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EducaFrontEnd</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Lincando ao arquivo com o css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Criação do cabeçalho com de navegação -->
+    <header>
+        <nav>
+            <div class="logo">Educa<span style="color: var(--accent);">FrontEnd</span></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="Home.html">Início</a></li>
+                <li><a href="pageHTML.html">HTML</a></li>
+                <li><a href="pageCSS.html">CSS</a></li>
+                <li><a href="pageJS.html">JavaScript</a></li>
+                <li><a href="pageContato.html">Contato</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Div da pagina home com os conteiners de redirecionamento para outras paginas -->
+    <div class="page-container">
+
+        <!-- Contact Page -->
+        <div id="contact-page" class="page-content">
+            <div class="contact-form">
+                <h2>Entre em Contato</h2>
+                <p>Tem dúvidas sobre desenvolvimento web? Envie sua mensagem que responderemos em breve!</p>
+
+                <div id="success-message">
+                    Mensagem enviada com sucesso! Entraremos em contato em breve.
+                </div>
+
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
+                        <div class="error" id="name-error">Por favor, insira um nome válido</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                        <div class="error" id="email-error">Por favor, insira um e-mail válido</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Assunto:</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Selecione...</option>
+                            <option value="duvida">Dúvida</option>
+                            <option value="sugestao">Sugestão</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                        <div class="error" id="subject-error">Por favor, selecione um assunto</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mensagem:</label>
+                        <textarea id="message" name="message" required></textarea>
+                        <div class="error" id="message-error">Por favor, insira uma mensagem</div>
+                    </div>
+
+                    <button type="submit" class="btn">Enviar Mensagem</button>
+                    <p></p>
+                </form>
+
+                <div><a class="btn" href="Home.html">Voltar para a página inicial</a></div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <footer>
+        <p>© 2023 FrontEnd Essentials - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -34,10 +34,9 @@
         </nav>
     </header>
 
-    <!-- Div da pagina home com os conteiners de redirecionamento para outras paginas -->
     <div class="page-container">
 
-        <!-- Contact Page -->
+        <!-- Criando Pagina de Contato -->
         <div id="contact-page" class="page-content">
             <div class="contact-form">
                 <h2>Entre em Contato</h2>
@@ -47,22 +46,23 @@
                     Mensagem enviada com sucesso! Entraremos em contato em breve.
                 </div>
 
+                <!--  Formulário de contato -->
                 <form id="contactForm">
                     <div class="form-group">
                         <label for="name">Nome:</label>
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" id="name" name="name" required> <!-- Campo de texto para o nome -->
                         <div class="error" id="name-error">Por favor, insira um nome válido</div>
                     </div>
 
                     <div class="form-group">
                         <label for="email">E-mail:</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" required> <!-- Campo de texto para o e-mail -->
                         <div class="error" id="email-error">Por favor, insira um e-mail válido</div>
                     </div>
 
                     <div class="form-group">
                         <label for="subject">Assunto:</label>
-                        <select id="subject" name="subject" required>
+                        <select id="subject" name="subject" required> <!-- Campo de seleção para o assunto -->
                             <option value="">Selecione...</option>
                             <option value="duvida">Dúvida</option>
                             <option value="sugestao">Sugestão</option>
@@ -73,14 +73,15 @@
 
                     <div class="form-group">
                         <label for="message">Mensagem:</label>
-                        <textarea id="message" name="message" required></textarea>
+                        <textarea id="message" name="message" required></textarea> <!-- Campo de texto para a mensagem -->
                         <div class="error" id="message-error">Por favor, insira uma mensagem</div>
                     </div>
 
-                    <button type="submit" class="btn">Enviar Mensagem</button>
+                    <button type="submit" class="btn">Enviar Mensagem</button> <!-- Botão para enviar o formulário -->
                     <p></p>
                 </form>
 
+                <!-- Botão de retorno para pagina inicial -->
                 <div><a class="btn" href="Home.html">Voltar para a página inicial</a></div>
             </div>
         </div>
@@ -89,7 +90,7 @@
     </div>
 
     <footer>
-        <p>© 2023 FrontEnd Essentials - Todos os direitos reservados</p>
+        <p>© 2025 EducaFrontEnd - Criado por Thiago Nascimento Leite - Aluno da UNICESUMAR</p>
     </footer>
 
     <script src="script.js"></script>

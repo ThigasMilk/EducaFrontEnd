@@ -1,3 +1,4 @@
+//Configuração do menu de navegação responsivo
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
 
@@ -7,7 +8,7 @@ if (hamburger && navLinks) {
     });
 }
 
-
+// Configuração do formulário de contato
 const contactForm = document.getElementById('contactForm');
 const successMessage = document.getElementById('success-message');
 
@@ -76,8 +77,8 @@ cards.forEach(card => {
     });
 });
 
+// Efeito de transição ao clicar nos cards
 document.addEventListener('DOMContentLoaded', function () {
-    // Efeito de transição ao clicar nos cards
     document.querySelectorAll('.card[data-href]').forEach(card => {
         card.addEventListener('click', function (e) {
             // Evita navegação instantânea de links internos

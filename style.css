@@ -307,6 +307,7 @@ footer {
     margin-top: 2rem;
 }
 
+/* Responsividade no CSS para telas menores */
 @media (max-width: 768px) {
     .nav-links {
         display: none;

@@ -18,15 +18,15 @@
     <!-- Criação do cabeçalho com de navegação -->
     <header>
         <nav>
-            <div class="logo">Educa<span style="color: var(--accent);">FrontEnd</span></div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="Home.html">Início</a></li>
-                <li><a href="pageHTML.html">HTML</a></li>
-                <li><a href="pageCSS.html">CSS</a></li>
-                <li><a href="pageJS.html">JavaScript</a></li>
-                <li><a href="pageContato.html">Contato</a></li>
+            <div aria-label="Educa Front End" class="logo">Educa<span style="color: var(--accent);">FrontEnd</span></div>
+            <ul role="menu" class="nav-links" id="navLinks">
+                <li role="Pagina inicial"><a href="Home.html">Início</a></li>
+                <li role="Pagina HTML"><a href="pageHTML.html">HTML</a></li>
+                <li role="Pagina CSS"><a href="pageCSS.html">CSS</a></li>
+                <li role="Pagina JavaScript"><a href="pageJS.html">JavaScript</a></li>
+                <li role="Pagina para entrar em contato"><a href="pageContato.html">Contato</a></li>
             </ul>
-            <div class="hamburger" id="hamburger">
+            <div aria-label="Abrir menu lateral" class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -132,7 +132,7 @@
                 </script>
 
                 <!-- Botão de retorno para pagina inicial -->
-                <div><a class="btn" href="Home.html">Voltar para a página inicial</a></div>
+                <div><a aria-label="Retornar para pagina inicial" class="btn" href="Home.html">Voltar para a página inicial</a></div>
             </div>
         </div>
 
